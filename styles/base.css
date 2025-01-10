@@ -58,6 +58,7 @@ nav a:hover {
 /* Main content */
 
 main {
+    max-width: fit-content;
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
@@ -65,15 +66,18 @@ main {
 main p, li{
     padding: var(--text-padding);
     margin: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lato", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .card {
     border: var(--box-border) rgba(0,0,0,0.6);
-    margin: .75rem;
+    margin: 1rem;
     background-color: var(--box-background);
     color: var(--box-text-color);
     border-radius: 15px;
+    display: inline-block;
 }
 
 .boxtitle{
@@ -104,6 +108,12 @@ h3 {
 
 li {
     text-align: left;
+    padding-left: 20px;
+    color: black;
+}
+
+li:before,li:after {
+    color: #000;
 }
 
 
