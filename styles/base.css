@@ -100,6 +100,10 @@ h3 {
     font-size: 1.3em;
     text-decoration: underline;
     margin: 10px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .lists {
