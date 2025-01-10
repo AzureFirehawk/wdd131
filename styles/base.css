@@ -26,6 +26,10 @@ h1, .boxtitle {
     background-color: #D0D0D0;
 }
 
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 nav {
     background-color: var(--heading-color);
     padding: var(--text-padding);
@@ -47,7 +51,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    transform: translateY(-4px) rotate(.2rad);
+    transform: translateY(-4px);
 }
 
 /* Main content */
@@ -61,15 +65,6 @@ main p, li{
     padding: var(--text-padding);
     margin: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-ul {
-    display: inline-block;
-    margin:20px;
-}
-
-li {
-    text-align: left;
 }
 
 .card {
@@ -93,6 +88,30 @@ li {
     margin: 18px;
     box-shadow: 0 0 30px gray;
 }
+
+/* Aside content */
+
+h3 {
+    font-size: 1.3em;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+.lists {
+    /* display: inline-block; */
+    align-items: left;
+    /* margin:20px; */
+    list-style-type: none;
+}
+
+li {
+    text-align: left;
+}
+
+li a {
+    text-decoration: none;
+}
+
 
 /* Footer content */
 
