@@ -21,13 +21,8 @@ myInfo = {
   };
   // Step 4: For each favorite food in the favoriteFoods property, create an HTML <li> element and place its value in the <li> element
   const foodsElement = document.querySelector('#favorite-foods');
-function createndAppendFoodItem(food) {
-  let favoriteFood = document.createElement('li');
-  favoriteFood.textContent = food;
-  foodsElement.appendChild(favoriteFood);
-}
-myInfo.favoriteFoods.forEach(createAndAppendFoodItem);
-
+  const foodListElements = myInfo.favoriteFoods.map((food) => `<li>${food}</li>`)
+  foodsElement.innerHTML = foodListElements.join("")
   
   
 //   let favoriteFood1 = document.createElement("li");
