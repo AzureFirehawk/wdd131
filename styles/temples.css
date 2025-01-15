@@ -19,8 +19,8 @@ header, footer{
 }
 
 header {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -50,15 +50,12 @@ header {
 	content: "✖";
 }
 
-.nav {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    padding: 10px;
+nav {
+    display: none;
+}
 
+.nav {
+    list-style-type: none;
 }
 
 .nav a {
@@ -66,7 +63,7 @@ header {
     color: var(--heading-text);
     text-decoration: none;
     font-size: 1.2em;
-    padding: 25px
+    padding: 15px
 }
 
 .nav a:hover {
@@ -76,17 +73,22 @@ header {
     padding: 15px;
 }
 
-.open h1 {
+h1.open {
     display: none;
 }
 
-.open ul {
-    display: block;
+nav.open {
+    display: flex;
     justify-content: center;
 }
 
 .open a {
 	display: block;
+    text-align: center;
+}
+
+.active::before {
+    content: "▼";
 }
 
 /* Main content */
@@ -101,18 +103,15 @@ main {
     font-weight: 500;
     font-style: normal;
     max-width: 1000px;
-    padding:auto;
     margin:auto;
     text-align: center;
 }
 
 
-/* .temples {
+.temples {
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-} */
+}
 
 .temples figure{
     margin: 10px;    
