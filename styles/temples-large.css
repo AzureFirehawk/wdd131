@@ -32,6 +32,10 @@
         padding: 15px
     }
 
+    
+}
+
+@media (min-width: 810px){
     .temples {
         display: grid;
         justify-content: center;
@@ -40,7 +44,7 @@
     }
 }
 
-@media (min-width: 650px) and (max-width: 939px) {
+@media (min-width: 550px) and (max-width: 809px) {
     .temples {
         display: grid;
         justify-content: center;
