@@ -1,0 +1,134 @@
+:root {
+    --main-color: #FFECD1;
+    --main-text: #001524;
+    --heading-color: #78290F;
+    --heading-text: #FFECD1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header, footer{
+    background-color: var(--heading-color);
+    color: var(--heading-text);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.2em;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Nav menu */
+
+#menu {
+	font-size: 1.8rem;
+	border: 0;
+	background: none;
+	color: var(--heading-text);
+ 	position: absolute;
+	top: 0.9rem;
+    right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "✖";
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+.nav a {
+    display: none;
+    color: var(--heading-text);
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 25px
+}
+
+.nav a:hover {
+    background-color: var(--main-color);
+    color: var(--main-text);
+    transition: color 0.3s, background-color 0.3s;
+    padding: 15px;
+}
+
+.open h1 {
+    display: none;
+}
+
+.open ul {
+    display: block;
+    justify-content: center;
+}
+
+.open a {
+	display: block;
+}
+
+/* Main content */
+
+body {
+    background-color: var(--main-color);
+}
+
+main {
+    color: var(--main-text);
+    font-family: "Lato", serif;
+    font-weight: 500;
+    font-style: normal;
+    max-width: 1000px;
+    padding:auto;
+    margin:auto;
+    text-align: center;
+}
+
+
+/* .temples {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+} */
+
+.temples figure{
+    margin: 10px;    
+}
+
+.temples figure img{
+    border: 1px solid #000;
+    max-width: 300px;
+}
+
+/* Footer content */
+
+footer {
+    padding: 15px;
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-style: normal;
+}
