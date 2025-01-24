@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Louis</title>
+    <meta name="description" content="WDD 131 place assignment week03 Dynamic Web Fundamentals st.louis">
+    <meta name="author" content="Madison Thomas">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>St. Louis</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 500px)" srcset="images/st-louis-large.webp">
+                <img src="images/st-louis-mobile.webp" alt="St. Louis Arch" width="500">
+            </picture>
+        </div>
+        <section class="lists">
+            <div class="data">
+                <div class="title">
+                    <h2>Data</h2>
+                </div>
+                <ul class="label">
+                    <li>Area:</li>
+                    <li>Population:</li>
+                    <li>Location:</li>
+                    <li>language:</li>
+                    <li>Currency:</li>
+                    <li>Time Zone:</li>
+                    <li>Calling Code:</li>
+                </ul>
+                <ul class="info">
+                    <li>8,458 sq mi</li>
+                    <li>2,809,299</li>
+                    <li>Missouri, United States</li>
+                    <li>English</li>
+                    <li>US Dollar</li>
+                    <li>UTC-6 (CST)</li>
+                    <li>+1</li>
+                </ul>
+            </div>
+            <div class="weather">
+                <div class="title">
+                    <h2>Weather</h2>
+                </div>
+                <img src="images/partly-sunny.svg" alt="partly sunny icon" width="75px">
+                <ul class="label">
+                    <li>Temperature:</li>
+                    <li>Humidity:</li>
+                    <li>Conditions:</li>
+                    <li>Wind Speed:</li>
+                    <li>Wind Chill:</li>
+                </ul>
+                <ul class="info">
+                    <li id="temp">27 °F</li>
+                    <li>46%</li>
+                    <li>Mostly Sunny</li>
+                    <li id="wind">5 mph</li>
+                    <li><span id="windchill"></span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🎸 Madison Thomas 🎸 Oklahoma, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

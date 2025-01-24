@@ -7,8 +7,8 @@ const list = document.querySelector('ul');
 button.addEventListener('click', function (){
     const li = document.createElement('li');
     const deleteButton = document.createElement('button');
-    if (input.value.trim() !== ''){
-        li.textContent = input.value;
+    if (input.value.trim() !== ""){
+        li.innerHTML = input.value;
         deleteButton.textContent = '❌';
         li.append(deleteButton);
         list.append(li);
