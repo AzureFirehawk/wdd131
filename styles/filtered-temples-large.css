@@ -1,0 +1,39 @@
+/* large view navigation ************************************/
+@media (min-width: 925px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: inline;
+    }
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        gap: 1.3em;
+    }
+    
+    .nav a {
+        display: inline;
+    }
+
+    .temples {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 620px) and (max-width: 925px) {
+    .temples {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
