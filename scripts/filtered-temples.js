@@ -142,7 +142,8 @@ function templeCards(array) {
             <p>Size: ${temple.area} sq ft</p>`;
         image.src = temple.imageUrl;
         image.alt = `${temple.templeName} Temple`
-        image.width = 350;
+        image.width = 400;
+        image.height = 250;
         image.loading = "lazy";
         card.setAttribute("class", "templeCard");
         card.appendChild(info);
