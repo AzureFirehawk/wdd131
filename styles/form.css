@@ -68,7 +68,7 @@ input[type="radio"] {
 .checkboxes {
     display: flex;
     flex-direction: column;
-    gap: 3px
+    gap: 7px
 }
 
 input[type="checkbox"] {
@@ -79,7 +79,7 @@ input[type="checkbox"], input[type="radio"] {
     transform: scale(1.4);
 }
 
-.optional legend::after {
+.optional label::after {
     color: blue;
     content: " (Optional)";
     font-size: small;
@@ -88,7 +88,7 @@ input[type="checkbox"], input[type="radio"] {
 .italics {
     font-style: italic;
     margin-top: -10px;
-    margin-bottom: 10px;
+
 }
 
 select, input[type="date"], input[type="text"], textarea, button {

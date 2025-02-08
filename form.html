@@ -8,6 +8,9 @@
     <meta name="author" content="Madison Thomas">
     <meta name="description" content="WDD 131 week05 form assignment Dynamic Web Fundamentals">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,7 +19,7 @@
     <main>
         <form id="review-form" method="get" action="review.html">
             <fieldset>
-                <legend>Product Name</legend>
+                <label for="productList">Product Name</label>
                 <select name="product" id="productList" required>
                     <option value="" disabled selected>Select a product...</option>
                 </select>
@@ -30,7 +33,7 @@
                 <label for="5star">⭐⭐⭐⭐⭐<input type="radio" name="rating" id="5star" required></label>
             </fieldset>
             <fieldset>
-                <legend>Date of Instalation</legend>
+                <label for="date">Date of Installation</label>
                 <input type="date" id="date" name="date" required>
             </fieldset>
             <fieldset class="checkboxes">
@@ -42,12 +45,11 @@
                 <label><input type="checkbox" name="design" id="design">Design</label>
             </fieldset>
             <fieldset class="optional">
-                <legend>Written Review</legend>
+                <label for="comments">Written Comments</label>
                 <textarea name="comments" id="comments" cols="30" rows="8"></textarea>
             </fieldset>
             <fieldset class="optional">
-                <legend>Your Name</legend>
-                <input type="text" id="name" name="name">
+                <label for="name">Your Name</label><input type="text" id="name" name="name">
             </fieldset>
             <button type="submit">Post Review</button>
         </form>
