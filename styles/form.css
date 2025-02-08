@@ -1,0 +1,120 @@
+:root {
+    --main-color: #FFECD1;
+    --main-text: #001524;
+    --heading-color: #78290F;
+    --heading-text: #FFECD1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    max-width: 400px;
+}
+
+/* Header content */
+
+header, button {
+    background-color: var(--heading-color);
+    color: var(--heading-text);
+    font-size: 1.2em;
+}
+
+header, h2{
+    padding: 10px;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+
+/* Main content */
+
+main {
+    background-color: var(--main-color);
+    color: var(--main-text);
+    padding: 10px;
+    font-family: "Lato", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#review-form fieldset {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    display:block;
+    margin: 10px auto;
+}
+
+.ratings {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    size: 20px;
+}
+
+.ratings label{
+    font-size: 10px;
+    text-align: center;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 3px
+}
+
+input[type="checkbox"] {
+    margin-right: 7px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    transform: scale(1.4);
+}
+
+.optional legend::after {
+    color: blue;
+    content: " (Optional)";
+    font-size: small;
+}
+
+.italics {
+    font-style: italic;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+select, input[type="date"], input[type="text"], textarea, button {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select, input[type="date"], input[type="text"]
+{
+    height: 40px;
+}
+
+button {
+    width: 96%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer content */
+
+footer {
+    background-color: var(--heading-color);
+    color: var(--heading-text);
+    padding: 10px;
+    text-align: center;
+}

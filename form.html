@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 05 - Form - WDD 131</title>
+    <script src="scripts/form.js" defer></script>
+    <meta name="author" content="Madison Thomas">
+    <meta name="description" content="WDD 131 week05 form assignment Dynamic Web Fundamentals">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form id="review-form" method="get" action="review.html">
+            <fieldset>
+                <legend>Product Name</legend>
+                <select name="product" id="productList" required>
+                    <option value="default" disabled selected>Select a product...</option>
+                </select>
+            </fieldset>
+            <fieldset class="ratings">
+                <legend>Overall Rating</legend>
+                <label for="1star">⭐<input type="radio" name="rating" id="1star"></label>
+                <label for="2star">⭐⭐<input type="radio" name="rating" id="2star"></label>
+                <label for="3star">⭐⭐⭐<input type="radio" name="rating" id="3star"></label>
+                <label for="4star">⭐⭐⭐⭐<input type="radio" name="rating" id="4star"></label>
+                <label for="5star">⭐⭐⭐⭐⭐<input type="radio" name="rating" id="5star"required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Date of Instalation</legend>
+                <input type="date" id="date" name="date" required>
+            </fieldset>
+            <fieldset class="checkboxes">
+                <legend>Which Features did you find useful in the product?</legend>
+                <legend class="italics">(Check all that apply)</legend>
+                <label><input type="checkbox" name="durabilty" id="durabilty">Durability</label>
+                <label><input type="checkbox" name="ease" id="ease">Ease of Use</label>
+                <label><input type="checkbox" name="performance" id="performance">Performance</label>
+                <label><input type="checkbox" name="design" id="design">Design</label>
+            </fieldset>
+            <fieldset class="optional">
+                <legend>Written Review</legend>
+                <textarea name="comments" id="comments" cols="30" rows="8"></textarea>
+            </fieldset>
+            <fieldset class="optional">
+                <legend>Your Name</legend>
+                <input type="text" id="name" name="name">
+            </fieldset>
+            <button type="submit">Post Review</button>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🎸 Madison Thomas 🎸 Oklahoma, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
