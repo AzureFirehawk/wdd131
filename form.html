@@ -18,7 +18,7 @@
             <fieldset>
                 <legend>Product Name</legend>
                 <select name="product" id="productList" required>
-                    <option value="default" disabled selected>Select a product...</option>
+                    <option value="" disabled selected>Select a product...</option>
                 </select>
             </fieldset>
             <fieldset class="ratings">
@@ -27,7 +27,7 @@
                 <label for="2star">⭐⭐<input type="radio" name="rating" id="2star"></label>
                 <label for="3star">⭐⭐⭐<input type="radio" name="rating" id="3star"></label>
                 <label for="4star">⭐⭐⭐⭐<input type="radio" name="rating" id="4star"></label>
-                <label for="5star">⭐⭐⭐⭐⭐<input type="radio" name="rating" id="5star"required></label>
+                <label for="5star">⭐⭐⭐⭐⭐<input type="radio" name="rating" id="5star" required></label>
             </fieldset>
             <fieldset>
                 <legend>Date of Instalation</legend>
@@ -35,7 +35,7 @@
             </fieldset>
             <fieldset class="checkboxes">
                 <legend>Which Features did you find useful in the product?</legend>
-                <legend class="italics">(Check all that apply)</legend>
+                <p class="italics">(Check all that apply)</p>
                 <label><input type="checkbox" name="durabilty" id="durabilty">Durability</label>
                 <label><input type="checkbox" name="ease" id="ease">Ease of Use</label>
                 <label><input type="checkbox" name="performance" id="performance">Performance</label>

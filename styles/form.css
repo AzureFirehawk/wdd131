@@ -58,7 +58,6 @@ input[type="radio"] {
 .ratings {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    size: 20px;
 }
 
 .ratings label{

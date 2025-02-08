@@ -46,15 +46,3 @@ function AddProduct() {
 
 AddProduct();
 
-const reviewTotal = document.querySelector("#reviews");
-
-let numReviews = Number(window.localStorage.getItem("numReviews-ls"));
-
-if (numReviews !== 0) {
-    reviewTotal.textContent = numReviews;
-}  else {
-    reviewTotal.textContent = `This is the first review!`;
-}
-
-numReviews += 1;
-window.localStorage.setItem("numReviews-ls", numReviews);
