@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - A Brighter Day</title>
+    <meta name="author" content="Madison Thomas">
+    <meta name="description" content="WDD 131 final project contact page A Brighter Day Dynamic Web Fundamentals">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="scripts/abd-base.js" defer></script>
+    <script src="scripts/abd-form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>A Brighter Day</h1>
+        <div>
+            <button type="button" id="menu" aria-label="Menu"></button>
+            <nav>
+                <ul class="nav">
+                    <li>
+                        <a href="index.html" class="active">Home</a>
+                    </li>                
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>        
+            </nav>
+        </div>
+    </header>
+    <main class="contact-main">
+        <br>
+        <h2>We're Here To Help</h2>
+        <div class="contacts">
+            <div class="contact-card">
+                <h4>Phone:</h4>
+                <p>(405) 555-5555</p>
+                <p>(800) 555-5555 (fax)</p>
+            </div>       
+            <div class="contact-card">
+                <h4>Email:</h4>
+                <p>contact-us<br>@brighterdayok.org</p>
+            </div>
+            <div class="contact-card">
+                <h4>Address:</h4>
+                <p>800 Rock Creek Rd<br>Norman, OK 73069</p>
+            </div>
+        </div>
+        <div>
+            <h2>Send Us A Message</h2>
+            <form id="contact-form" method="get" action="thanks.html">
+                <fieldset>
+                    <label for="fname">First Name:* </label><input type="text" id="fname" name="fname" required>
+                    <label for="lname">Last Name:* </label><input type="text" id="lname" name="lname" required>
+                    <label for="phone">Phone: </label><input type="tel" id="phone" name="phone" placeholder="123-555-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <label for="email">Email:* </label><input type="email" id="email" name="email" required>
+                </fieldset>
+                <fieldset class="radios">
+                    <legend>Preferred Contact Method</legend>
+                    <label for="email-message">Email<input type="radio" name="prefered" id="email-message" required></label>
+                    <label for="call">Phone Call<input type="radio" name="prefered" id="call"></label>
+                    <label for="text">Text Message<input type="radio" name="prefered" id="text"></label>
+                </fieldset>
+                <fieldset>
+                    <label for="citylist">City</label>
+                    <select name="product" id="citylist" required>
+                        <option value="" disabled selected>Select your city...</option>
+                    </select>
+                </fieldset>
+                <fieldset class="checkboxes">
+                    <legend>I am interested in:</legend>
+                    <p class="italics">(Check all that apply)</p>
+                    <label><input type="checkbox" name="class" id="class">Attending Class</label>
+                    <label><input type="checkbox" name="donation" id="donation">Making a Donation</label>
+                    <label><input type="checkbox" name="information" id="information">General Information</label>
+                </fieldset>
+                <fieldset id="classlist">
+                </fieldset>
+                <fieldset class="optional">
+                    <label for="comments">Written Comments</label>
+                    <textarea name="comments" id="comments" cols="30" rows="8"></textarea>
+                </fieldset>
+                <button type="submit">Send Request</button>
+            </form>
+        </div>
+        <br>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🎸 Madison Thomas 🎸 Oklahoma, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

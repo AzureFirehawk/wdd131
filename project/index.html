@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - A Brighter Day</title>
+    <meta name="author" content="Madison Thomas">
+    <meta name="description" content="WDD 131 final project home page A Brighter Day Dynamic Web Fundamentals">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="scripts/abd-base.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>A Brighter Day</h1>
+        <div>
+            <button type="button" id="menu" aria-label="Menu"></button>
+            <nav>
+                <ul class="nav">
+                    <li>
+                        <a href="index.html" class="active">Home</a>
+                    </li>                
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>        
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 650px)" srcset="images/pregnant-couple-full.webp">
+                <img src="images/pregnant-couple-mobile.webp" alt="Pregnant couple outdoors" width="650" height="400" loading="lazy">
+            </picture>
+            <p>
+                <a class="button" href="contact.html">Contact Us</a>
+            </p>
+        </div>
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>We aim to provide fundamental support to pregnant and parenting individuals in need, because everyone deserves to see a <strong>Brighter Day</strong> ahead.</p>
+        </section>
+        <section class="service-cards">
+            <div class="card">
+                <h2>Classes</h2>
+                <img src="images/monitor.svg" alt="Icon of a computer monitor" width="80" height="80" loading="lazy">
+                <h3>Free weekly classes to help you navigate parenthood or your pregnancy. </h3>
+                <p>
+                    <a class="button" href="about.html">Learn More</a>
+                </p>
+            </div>
+            <div class="card">
+                <h2>Supplies</h2>
+                <img src="images/gift.svg" alt="Icon of a present" width="80" height="80" loading="lazy">
+                <h3>Leave each appointment with diapers, wipes, and baby supplies.</h3>
+                <p>
+                    <a class="button" href="about.html">Learn More</a>
+                </p>
+            </div>
+            <div class="card">
+                <h2>Donations</h2>
+                <img src="images/truck.svg" alt="Icon of a truck" width="80" height="80" loading="lazy">
+                <h3>Help us provide essential supplies to those in need.</h3>
+                <p>
+                    <a class="button" href="about.html">Learn More</a>
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🎸 Madison Thomas 🎸 Oklahoma, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
