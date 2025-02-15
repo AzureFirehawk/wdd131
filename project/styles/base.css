@@ -336,6 +336,14 @@ button {
     height: auto;
 }
 
+.about-card a {
+    color: var(--blue);
+}
+
+.about-card a:hover {
+    text-decoration: underline;
+}
+
 /* Larger screens */
 
 @media screen and (min-width: 880px) {
