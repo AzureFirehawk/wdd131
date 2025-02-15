@@ -263,7 +263,6 @@ input[type="radio"] {
 .checkboxes {
     display: flex;
     flex-direction: column;
-    align-items: left;
     gap: 7px
 }
 
@@ -302,7 +301,6 @@ select, input[type="date"], input[type="text"], input[type="tel"], input[type="e
 #classlist{
     display: flex;
     flex-direction: column;
-    align-items: left;
     gap: 7px
 }
 
