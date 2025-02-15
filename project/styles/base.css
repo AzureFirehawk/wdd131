@@ -22,6 +22,7 @@
 body {
     max-width: 1200px;
     margin: auto;
+    position: relative;
 }
 
 header, footer {    
@@ -29,7 +30,7 @@ header, footer {
     color: var(--main-text);
 }
 
-h1, h2, h3, h4, nav {
+h1, h2, h3, nav {
     font-family: var(--header-font);
 }
 
@@ -38,10 +39,15 @@ header {
     display: flex; 
     flex-direction: column;
     align-items: baseline;
+    justify-content: space-between;
 }
 
 h1 {
     font-size: 3em;
+}
+
+h2 {
+    padding: 15px;
 }
 
 /* Navigation */
@@ -51,10 +57,11 @@ h1 {
 	border: 0;
 	background: none;
 	color: var(--main-text);
-    margin-right: 30px;
- 	position: absolute;
-	top: 23px;
-    right: 1rem;
+    cursor: pointer;
+    position: absolute;
+    text-align: right;
+	top: 20px;
+    right: 30px;
 }
 
 #menu::before {
@@ -165,13 +172,13 @@ strong {
     padding: 20px;
 }
 
-.card, .card .button, .contact-card {
+.card, .card .button, .contact-card, .about-card {
     color: var(--secondary-text);
     border-radius: 25px;
     border: none;
 }
 
-.card, .contact-card{
+.card, .contact-card, .yellow {
     background-color: var(--card-yellow);
     font-size: 1.2em;
     padding: 20px;
@@ -305,6 +312,29 @@ button {
     margin: 0 auto;
 }
 
+/* About page */
+
+.about-cards {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+.blue {
+    background-color: var(--card-blue);
+    width: 80%;
+}
+
+.about-card h2 {
+    padding: 10px;
+
+}
+
+.about-card img {
+    width: 75%;
+    height: auto;
+}
 
 /* Larger screens */
 
@@ -316,7 +346,7 @@ button {
         justify-items: center;
     }
 
-    .card {
+    .card  {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -325,6 +355,51 @@ button {
         align-self: center;
         width: 80%;
     }
+
+    .about-card {
+        background-color: white;
+        position: relative;
+    }
+
+    .yellow {
+        justify-content: left;
+    }
+    
+    .blue {
+        justify-content: right;
+    }
+
+    .about-card h4 {
+        position: absolute;
+        text-align: left;
+        font-size: smaller;
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    .yellow h4 {
+        background-color: var(--yellow);
+        left: 30%;
+        top: 20%;
+    }
+    
+    .blue h4{
+        background-color: var(--blue);
+        color: var(--main-text);
+        right: 30%;
+        bottom: 20%;
+    }
+    
+    .about-card {
+        display: flex;
+        width: 90%;
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    
+    
+
 }
 
 @media screen and (min-width: 900px) {
@@ -350,5 +425,3 @@ button {
         display: none;
     }
 }
-
-
