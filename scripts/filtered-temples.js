@@ -105,7 +105,7 @@ const temples = [
         location: "St. Louis, Missouri, USA",
         dedicated: "1997, June, 5",
         year: 1997,
-        area: 158749,
+        area: 58749,
         imageUrl:
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-louis-missouri/400x250/st-louis-temple-lds-903363-wallpaper.jpg"
     },
